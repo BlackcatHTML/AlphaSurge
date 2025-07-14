@@ -1,0 +1,60 @@
+
+  
+  .splide__slide {
+    border-radius: 1.25rem;
+    background: #16181f;
+    transform: scale(.9);
+    transition: transform 400ms;
+    padding: 2rem;
+  }
+  
+
+  
+  .splide .splide__arrow {
+    height: 50px;
+    transform: none;
+    width: 50px;
+    opacity: .9;
+    border-radius: 10px;
+  }
+  
+  .splide .splide__arrow svg {
+    filter: invert(1);
+    width: 24px;
+    height: 24px;
+  }
+  .splide__arrow.splide__arrow--prev {
+    left: 0;
+    background: #d72429;
+  }
+  .splide__arrow.splide__arrow--next {
+    right: 0;
+    background: #d72429;
+  }
+
+  .splide__arrow svg path {
+    fill: #000000; /* Example: black arrow */
+  }
+
+  .splide__arrow:focus,
+  .splide__arrow:focus-visible,
+  .splide__arrow:active {
+      outline: none;
+      box-shadow: none;
+      outline-offset: 0;
+      background: #d72429;
+      border: none;
+      opacity: 1;
+  }
+
+  @media(min-width: 585px) {
+    .splide {
+        padding: 20px 0;
+      }
+    .splide__slide.is-active{
+        transform: scale(1);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
